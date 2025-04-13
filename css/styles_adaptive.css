@@ -65,9 +65,8 @@ img {
   line-height: 117%;
   letter-spacing: 0.03em;
   color: #404bbf;
-  margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo span {
@@ -75,8 +74,7 @@ img {
 }
 
 .menu {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 
 .nav-link {
@@ -115,13 +113,11 @@ img {
 }
 
 .contacts {
-  display: flex;
+  display: none;
 }
 
 .contacts-list {
   display: flex;
-  gap: 40px;
-  align-items: center;
 }
 
 .contact-item {
@@ -136,16 +132,19 @@ img {
   color: #404bbf;
 }
 
+.header-burger {
+  background-color: #fff;
+  border: none;
+}
 /* ------------------header------------------ */
 
 /* ------------------main page------------------ */
-
 .main-page {
   max-width: 1440px;
   margin: 0 auto;
   background-color: #2e2f42;
   text-align: center;
-  padding: 188px 0;
+  padding: 72px 52px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -159,13 +158,14 @@ img {
 
 .main-page-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
+  font-size: 36px;
+  line-height: 1.11; 
   letter-spacing: 0.02em;
   color: #fff;
   text-transform: capitalize;
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .main-page-title span {
@@ -194,7 +194,6 @@ img {
 .main-page-button:hover {
   background-color: #404bbf;
 }
-
 /* ------------------main page------------------ */
 /* ------------------our features------------------ */
 .features {
@@ -243,7 +242,6 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
 /* ------------------our features------------------ */
 /* ------------------our team------------------ */
 .our-team {
@@ -253,7 +251,6 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
 
 .our-team-title {
   text-transform: capitalize;
@@ -334,7 +331,6 @@ img {
 .soc-link:focus {
   background-color: #404bbf;
 }
-
 /* ------------------our team------------------ */
 /* ------------------our portfolio------------------ */
 .portfolio {
@@ -421,7 +417,6 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
 /* ------------------our portfolio------------------ */
 /* ------------------footer------------------ */
 .footer {
@@ -568,7 +563,6 @@ img {
 .sbs-form:hover .sbs-input-label {
   border-color: #4d5ae5;
 }
-
 /* ------------------footer------------------ */
 /* ------------------modals------------------ */
 .modal-overlay {
@@ -815,16 +809,56 @@ img {
 
 
 @media screen and (min-width: 768px) {
-  /* -------------features----------*/
   .container {
     max-width: 768px;
     }
+  /* -------------header----------*/
+  .header-burger {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  
+  }
+  .menu {
+    display: flex;
+    gap: 40px;
+  
+  }
+  .contacts {
+    display: flex;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12 px;
+    justify-content: center;
+  }
+  /* -------------header----------*/
+  /* -------------hero----------*/
+  .main-page {
+    padding: 112px 0px;    
+    }
+
+  .main-page-title {
+    max-width: 496px;    
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }   
+  /* -------------hero----------*/
+  
+  /* -------------features----------*/
 .features-list-item {
     width: calc((100% - 24px * 1) / 2);
     }
+
 .features-list {
     gap: 72px 24px;
     }
+
 .feature-title {
     text-align: left;
 }
@@ -838,6 +872,7 @@ img {
 .portfolio-list {
     row-gap: 72px;
 }
+
 .portfolio-list-item {
     width: calc((100% - 24px * 1) / 2);
 }
@@ -846,15 +881,18 @@ img {
 .footer {
   padding: 96px 108px;
   }
+
 .logo-block,
 .soc-links-block,
 .sbs-form-wrapper  {
   text-align-last: left;
   }
+
 .footer .container {
   gap: 72px 24px;
   justify-content: start;
   }
+
   .sbs-input {
     width: 264px;
   } 
@@ -862,16 +900,58 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-/* -------------features----------*/
   .container {
     max-width: 1128px;
     }
+  /* -------------header----------*/
+  .header-burger {
+    display: none;
+  }
+
+  .logo {
+  margin-right: 76px; 
+  padding-top: 24px;
+  padding-bottom: 24px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contacts {
+    display: flex;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  /* -------------header----------*/
+  /* -------------hero----------*/
+  .main-page {
+    padding: 188px 0px;    
+  }
+
+  .main-page-title {
+    max-width: 496px;    
+    margin-bottom: 48px;
+    font-size: 56px;
+    line-height: 1.07;
+  }   
+   /* -------------hero----------*/
+
+  /* -------------features----------*/ 
 .features {
     padding: 120px 156px;
     }
+
 .features-list-item {
     width: calc((100% - 24px * 3) / 4);
     }
+
 .icon-container {
     max-width: 100%;
     height: 112px;
@@ -883,12 +963,14 @@ img {
     justify-content: center;
     align-items: center;
     }
+
 .feature-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
     }
+
 .feature-description {
     font-weight: 400;
     }
@@ -897,16 +979,17 @@ img {
 .our-team-list-item {
   width: calc((100% - 24px * 3) / 4);  
   }
-
 /* ------------team----------*/
 /* ------------portfolio----------*/
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
     }
+
     .portfolio-list {
       row-gap: 48px;
     }
+
   .portfolio-list-item {
       width: calc((100% - 24px * 2) / 3);
     }
@@ -915,19 +998,24 @@ img {
 .footer {
   padding: 100px 0;
   }
+
   .footer .container {
     flex-wrap: nowrap;
     gap: 0px;   
-  }
+  }    
+
   .sbs-input {
     width: 264px;
   }
+
   .soc-links-block {
     margin-left: 120px;
   }
+
   .sbs-form-wrapper {
     margin-left: 80px; 
   }
+  
   .sbs-form {
     flex-wrap: nowrap;
     justify-content: start;
