@@ -48,6 +48,8 @@ img {
 .header .container {
   display: flex;
   justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .navigation {
