@@ -48,8 +48,6 @@ img {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .navigation {
@@ -67,6 +65,7 @@ img {
   color: #404bbf;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-left: 16px;
 }
 
 .logo span {
@@ -136,6 +135,8 @@ img {
 .header-burger {
   background-color: #fff;
   border: none;
+  padding: 0;
+  margin-right: 16px;
 }
 /* ------------------header------------------ */
 
