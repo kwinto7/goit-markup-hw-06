@@ -209,6 +209,10 @@ img {
   padding: 96px 0;
 }
 
+.features .container {
+  padding: 0 16px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -259,6 +263,10 @@ img {
   padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
+}
+
+.our-team .container {
+  padding: 0 16px;
 }
 
 .our-team-title {
@@ -442,6 +450,7 @@ img {
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
+  padding: 0;
 }
 
 .logo-block {
