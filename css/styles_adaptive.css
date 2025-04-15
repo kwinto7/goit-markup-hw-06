@@ -34,6 +34,8 @@ img {
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* ------------------header------------------ */
@@ -65,7 +67,7 @@ img {
   color: #404bbf;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .logo span {
@@ -136,7 +138,7 @@ img {
   background-color: #fff;
   border: none;
   padding: 0;
-  margin-right: 16px;
+  /* margin-right: 16px; */
 }
 /* ------------------header------------------ */
 
@@ -167,6 +169,10 @@ img {
       ),
       url(../images/hero-img-mob2x.jpg);
   }
+}
+
+.main-page .container {
+  padding: 0;
 }
 
 .main-page-title {
@@ -210,10 +216,6 @@ img {
 /* ------------------our features------------------ */
 .features {
   padding: 96px 0;
-}
-
-.features .container {
-  padding: 0 16px;
 }
 
 .visually-hidden {
@@ -266,10 +268,6 @@ img {
   padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.our-team .container {
-  padding: 0 16px;
 }
 
 .our-team-title {
@@ -356,10 +354,6 @@ img {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.portfolio .container {
-  padding: 0 16px;
 }
 
 .portfolio-title {
@@ -918,7 +912,6 @@ img {
   }
 
   .logo {
-    margin-left: 16px;
     margin-right: 120px;
   }
   .menu {
@@ -927,7 +920,6 @@ img {
   }
   .contacts {
     display: flex;
-    margin-right: 16px;
   }
 
   .contacts-list {
@@ -971,10 +963,6 @@ img {
   /* -------------features----------*/
   .features-list-item {
     width: calc((100% - 24px * 1) / 2);
-  }
-
-  .features .container {
-    padding: 0 16px;
   }
 
   .features-list {
@@ -1027,7 +1015,7 @@ img {
 
   .logo-block,
   .sbs-form-wrapper {
-    margin-left: 108px;
+    padding-left: 108px;
   }
   /* ------------footer----------*/
   /* ------------modal----------*/
@@ -1041,6 +1029,7 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1128px;
+    padding: 0;
   }
   /* -------------header----------*/
   .header-burger {
@@ -1181,7 +1170,7 @@ img {
   }
 
   .logo-block {
-    margin-left: 156px;
+    padding-left: 156px;
   }
 
   .soc-links-block {
@@ -1189,7 +1178,7 @@ img {
   }
 
   .sbs-form-wrapper {
-    margin-left: 80px;
+    padding-left: 80px;
   }
 
   .sbs-form {
