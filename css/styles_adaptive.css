@@ -31,7 +31,6 @@ img {
 }
 
 .container {
-  width: 100%;
   max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -1004,19 +1003,14 @@ img {
   }
 
   .footer .container {
-    gap: 72px 24px;
-    justify-content: start;
-    padding: 0;
+    justify-content: flex-start;
+    padding-left: 108px;
   }
 
   .sbs-input {
     width: 264px;
   }
-
-  .logo-block,
-  .sbs-form-wrapper {
-    padding-left: 108px;
-  }
+ 
   /* ------------footer----------*/
   /* ------------modal----------*/
   .modal {
@@ -1028,8 +1022,9 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1128px;
-    padding: 0;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   /* -------------header----------*/
   .header-burger {
@@ -1101,10 +1096,7 @@ img {
   .features {
     padding: 120px 0;
   }
-  .features .container {
-    padding: 0;
-  }
-
+  
   .features-list-item {
     width: calc((100% - 24px * 3) / 4);
   }
@@ -1142,10 +1134,7 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
-  .portfolio .container {
-    padding: 0;
-  }
+  
   .portfolio-list {
     row-gap: 48px;
   }
@@ -1159,18 +1148,14 @@ img {
   }
 
   .footer .container {
-    min-width: 1440px;
     flex-wrap: nowrap;
     gap: 0px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .sbs-input {
     width: 264px;
-  }
-
-  .logo-block {
-    padding-left: 156px;
   }
 
   .soc-links-block {
@@ -1178,7 +1163,7 @@ img {
   }
 
   .sbs-form-wrapper {
-    padding-left: 80px;
+    margin-left: 80px;
   }
 
   .sbs-form {
